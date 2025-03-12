@@ -10,6 +10,11 @@ namespace BetterDecorador
         /// <param name="args">Arguments to generate the proper text for Decor function</param>
         private static void Main(string[] args)
         {
+            if (args.Length < 3)
+            {
+                Console.WriteLine(Decor("User did not specify args !", '=', 3));
+                return;
+            }
             Console.WriteLine(Decor(args[0], char.Parse(args[1]), int.Parse(args[2])));
         }
 
