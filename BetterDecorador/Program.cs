@@ -12,7 +12,7 @@ namespace BetterDecorador
         {
             if (args.Length < 3)
             {
-                Console.WriteLine(Decor("User did not specify args !", '=', 3));
+                Console.WriteLine(Decor());
                 return;
             }
             Console.WriteLine(Decor(args[0], char.Parse(args[1]), int.Parse(args[2])));
@@ -25,7 +25,7 @@ namespace BetterDecorador
         /// <param name="symbol">Which symbol will be used</param>
         /// <param name="amount">The amount of symbols you want</param>
         /// <returns></returns>
-        private static string Decor(string text, char symbol, int amount)
+        private static string Decor(string text = "User did not specify args !", char symbol = '=', int amount = 3)
         {
             string symbols = "";
             for (int i = 0; i<amount; i++)
