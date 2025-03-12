@@ -17,7 +17,7 @@ namespace BetterDecorador
             }
             Console.WriteLine(Decor(args[0], char.Parse(args[1]), int.Parse(args[2])));
         }
-
+        
         /// <summary>
         /// Function that returns a string containing the text surrounded by the symbols amount
         /// </summary>
