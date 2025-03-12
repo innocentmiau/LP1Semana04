@@ -12,11 +12,11 @@ namespace BetterDecorador
         private static string Decor(string text, char symbol, int amount)
         {
             string symbols = "";
-            for (int i = 0; i < amount; i++)
+            for (int i = 0; i<amount; i++)
             {
                 symbols += symbol;
             }
-
+            // symbols text symbols
             return $"{symbols} {text} {symbols}";
         }
     }
