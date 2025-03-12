@@ -21,9 +21,9 @@ namespace BetterDecorador
         /// <summary>
         /// Function that returns a string containing the text surrounded by the symbols amount
         /// </summary>
-        /// <param name="text">The text in the middle</param>
-        /// <param name="symbol">Which symbol will be used</param>
-        /// <param name="amount">The amount of symbols you want</param>
+        /// <param name="text">The text in the middle, by default will be "User did not specify args !"</param>
+        /// <param name="symbol">Which symbol will be used, by default will be '='</param>
+        /// <param name="amount">The amount of symbols you want, by default will be 3</param>
         /// <returns></returns>
         private static string Decor(string text = "User did not specify args !", char symbol = '=', int amount = 3)
         {
